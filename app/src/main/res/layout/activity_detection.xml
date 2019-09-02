@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".detection">
+
+
+    <ImageView
+        android:id="@+id/imageView20"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/bg1" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:shadowColor="#00FFF9F9"
+        android:textStyle="bold"
+        android:text="هل أنا مصاب؟"
+
+        android:textColor="@color/colorAccent"
+        android:textSize="25dp"
+        android:layout_centerHorizontal="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView21"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView16"
+        android:layout_centerHorizontal="true"
+
+        app:srcCompat="@drawable/ifiline" />
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="121dp"
+        app:srcCompat="@drawable/numbernextback" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="130dp"
+        android:text="TextView"
+        android:textColor="#B1147D"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@+id/imageView14"
+        android:layout_toEndOf="@+id/imageView14"
+        android:onClick="backQu"
+        app:srcCompat="@drawable/ifinext" />
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@+id/imageView14"
+        android:layout_toStartOf="@+id/imageView14"
+        android:onClick="nextQu"
+        app:srcCompat="@drawable/ifiback" />
+
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="360dp"
+        android:layout_height="265dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="176dp"
+        app:srcCompat="@drawable/textbox" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="329dp"
+        android:layout_height="70dp"
+        android:gravity="right"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="192dp"
+        android:textStyle="bold"
+        android:textSize="19sp"
+        android:text="TextView" />
+
+    <LinearLayout
+        android:layout_width="320dp"
+        android:layout_height="170dp"
+        android:gravity="right"
+        android:layout_below="@+id/textView12"
+        android:layout_centerInParent="true"
+
+        android:orientation="vertical">
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:text="بسم الله الرحمن الريحم"
+            android:button="@null"
+            android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+            />
+
+        <CheckBox
+            android:id="@+id/checkBox2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginTop="30dp"
+            android:text="الحمد لله رب العالمين"
+            android:button="@null"
+            android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+            />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/submitbt"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/imageView17"
+        android:layout_centerHorizontal="true"
+        android:onClick="submitbt"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/sumbitaction" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/imageView17"
+        android:layout_centerHorizontal="true"
+        android:onClick="submitbt"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:background="@drawable/webutton"
+        android:text="تسليم الاجابات" />
+
+
+</RelativeLayout>
