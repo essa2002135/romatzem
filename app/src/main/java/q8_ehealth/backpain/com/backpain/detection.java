@@ -36,6 +36,9 @@ ArrayList<String> answer2;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detection);
 
+
+
+
         quHeader = new ArrayList<String>();
         answer1 = new ArrayList<String>();
         answer2 = new ArrayList<String>();

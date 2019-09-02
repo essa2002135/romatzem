@@ -123,17 +123,22 @@ String theId;
                 }
                 else if (position == 3)
                 {
-                    gotNext = new Intent(getBaseContext(),papaer.class);
-                    theId = "4";
-                    gotNext.putExtra("TheType", theId);
-                    startActivity(gotNext);
+                    //gotNext = new Intent(getBaseContext(),papaer.class);
+                   // theId = "4";
+                   // gotNext.putExtra("TheType", theId);
+                  //  startActivity(gotNext);
 
+
+                    gotNext = new Intent(getBaseContext(),listdoctorAppointment.class);
+                   // theId = "4";
+                   // gotNext.putExtra("TheType", theId);
+                    startActivity(gotNext);
 
 
                 }
                 else if (position == 4)
                 {
-                    gotNext = new Intent(getBaseContext(),papaer.class);
+                    gotNext = new Intent(getBaseContext(),medicalsimportant.class);
                     theId = "3";
                     gotNext.putExtra("TheType", theId);
                     startActivity(gotNext);
