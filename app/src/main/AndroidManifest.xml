@@ -18,7 +18,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".startEstbyan"></activity>
+        <activity android:name=".result_esbyan"></activity>
+        <activity android:name=".qustion_estbyan" />
+        <activity android:name=".startEstbyan" />
         <activity android:name=".detectionstart" />
         <activity android:name=".rm_what_i_knew" />
         <activity

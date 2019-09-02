@@ -106,10 +106,17 @@ String theId;
                 }
                 else if (position == 2)
                 {
-                    gotNext = new Intent(getBaseContext(),video.class);
-                    theId = "5";
-                    gotNext.putExtra("TheType", theId);
-                    startActivity(gotNext);
+
+
+                   gotNext = new Intent(getBaseContext(),startEstbyan.class);
+                      //theId = "5";
+                      //gotNext.putExtra("TheType", theId);
+                  startActivity(gotNext);
+
+                   // gotNext = new Intent(getBaseContext(),video.class);
+                 //   theId = "5";
+                  //  gotNext.putExtra("TheType", theId);
+                  //  startActivity(gotNext);
 
 
 
