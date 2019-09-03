@@ -8,33 +8,51 @@
 
 
 
+
     <ImageView
-        android:id="@+id/newbarac"
+        android:id="@+id/imageView20"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bg1" />
+
+    <TextView
+        android:id="@+id/textView16"
         android:layout_width="wrap_content"
-        android:layout_height="100dp"
-        android:layout_alignParentTop="true"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:shadowColor="#00FFF9F9"
+        android:textStyle="bold"
+        android:text="أنشطة وفاعليات"
+        android:textColor="@color/colorAccent"
+        android:textSize="25dp"
+        android:gravity="center"
         android:layout_centerHorizontal="true"
-        android:scaleType="fitXY"
-        android:src="@drawable/bar" />
-
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/titleac"
-        android:layout_width="170dp"
-        android:layout_height="40dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginEnd="14dp"
-        android:layout_marginTop="67dp"
-        android:scaleType="fitXY"
-        android:src="@drawable/namefilm" />
+        android:id="@+id/imageView21"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView16"
+        android:layout_centerHorizontal="true"
+
+        app:srcCompat="@drawable/ifiline" />
 
 
     <ListView
         android:id="@+id/theListViewActivity"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/titleac"
+        android:layout_below="@+id/imageView21"
         android:layout_centerHorizontal="true" />
 
 

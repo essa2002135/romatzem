@@ -13,7 +13,7 @@
         android:padding="10dp"
         android:scaleType="fitXY"
 
-        app:srcCompat="@drawable/textboxm" />
+        app:srcCompat="@drawable/hoinfotextbox" />
 
     <TextView
         android:id="@+id/textView7"

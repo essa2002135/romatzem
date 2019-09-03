@@ -28,7 +28,7 @@ ArrayList<String> answer2;
     ImageView nextButton;
     ImageView sumbitImage;
 
-    public static int[] intArray = new int[] {0,0,0,0,0,0,0,0};
+    public static int[] intArray = new int[] {0,0,0,0,0,0};
 
     Integer counter;
     @Override
@@ -45,32 +45,17 @@ ArrayList<String> answer2;
         counter = 0;
 
 
-        quHeader.add("هل عمرك أقل من 40 عاما؟");
-        quHeader.add("هل تعرضت لأي إصابة أو حادث عرضي ؟");
-        quHeader.add("هل تتحسن أعراض آلام ظهرك مع ممارسة التمارين الرياضية؟");
-        quHeader.add("كيف هي سرعة تطور ألم ظهرك؟");
+        quHeader.add("هل تعاني من الام المفاصل؟");
+        quHeader.add("هل تعاني من انتفاخات في المفاصل؟");
+        quHeader.add("هل تعاني من تيبس في المفاصل عند الاستيقاظ من النوم ساعه او اكثر؟");
+        quHeader.add("هل تعاني من الام في أسفل الظهر مع تيبس عند الاستيقاظ من النوم ويتحسن مع الحركة؟ ");
 
-        quHeader.add("كيف تصبح الآلام مع الراحة؟");
-        quHeader.add("هل تشعر بصعوبة التحرك صباحا عند الاستيقاظ من النوم لأكثر من 30 دقيقة (تيبس صباحي)؟");
-        quHeader.add("هل تستيقظ غالبا في النصف الثاني من الليل بسبب شعورك بآلام ظهرك؟");
-        quHeader.add("هل يمكنك أن تصف آلام ظهرك بأنها خافقة أو موجعة؟");
-        answer1.add("نعم");
-        answer2.add("لا");
+        quHeader.add("هل تم تشخيصك بالصدفيه في الجلد او لديك قريب من الدرجة الاولى لديه تشخيص صدفية الجلد؟");
+        quHeader.add("هل لديك قريب من الدرجة الاولى تم تشخيصه بمرض الروماتويد، اللوبس، التهاب الفقرات التلاصقي او التهاب المفاصل الصدفي؟ ");
 
 
-        answer1.add("نعم");
-        answer2.add("لا");
 
 
-        answer1.add("نعم");
-        answer2.add("لا");
-
-
-        answer1.add("تتأزم حالة المرض بسرعة");
-        answer2.add("تظهر آلام الظهر تدريجيا");
-
-        answer1.add("تقل أعراض آلام الظهر مع الراحة");
-        answer2.add("لا تقل أعراض آلام الظهر مع الراحة");
 
         answer1.add("نعم");
         answer2.add("لا");
@@ -82,6 +67,19 @@ ArrayList<String> answer2;
 
         answer1.add("نعم");
         answer2.add("لا");
+
+
+        answer1.add("نعم");
+        answer2.add("لا");
+
+        answer1.add("نعم");
+        answer2.add("لا");
+
+        answer1.add("نعم");
+        answer2.add("لا");
+
+
+
 
         numberText = (TextView) findViewById(R.id.textView11);
         qheaderText = (TextView) findViewById(R.id.textView12);
@@ -91,7 +89,7 @@ ArrayList<String> answer2;
 
         nextButton = (ImageView) findViewById(R.id.imageView16);
 
-        intArray = new int[] {0,0,0,0,0,0,0,0};
+        intArray = new int[] {0,0,0,0,0,0};
 
         backButton.setVisibility(View.INVISIBLE);
 
@@ -134,7 +132,7 @@ ArrayList<String> answer2;
         anserText1.setText(answer1.get(0));
         anserText2.setText(answer2.get(0));
 
-        numberText.setText("1/8");
+        numberText.setText("1/6");
     }
 
 
@@ -145,9 +143,9 @@ ArrayList<String> answer2;
 
         counter += 1;
         Integer nextqu = counter + 1;
-        numberText.setText(nextqu.toString()+"/8");
+        numberText.setText(nextqu.toString()+"/6");
 
-        if (counter == 7)
+        if (counter == 5)
         {
             nextButton.setVisibility(View.INVISIBLE);
 
@@ -186,7 +184,7 @@ ArrayList<String> answer2;
         }
 
         Integer nextqu = counter + 1;
-        numberText.setText(nextqu.toString()+"/8");
+        numberText.setText(nextqu.toString()+"/6");
         anserText1.setChecked(false);
         anserText2.setChecked(false);
 

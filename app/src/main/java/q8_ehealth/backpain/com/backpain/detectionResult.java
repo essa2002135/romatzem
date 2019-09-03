@@ -36,7 +36,7 @@ public class detectionResult extends AppCompatActivity {
         }
         if (detection.intArray[0] == 2)
         {
-            state3 +=1;
+            state2 +=1;
         }
 
 
@@ -84,32 +84,15 @@ public class detectionResult extends AppCompatActivity {
 
         if (detection.intArray[5] == 1)
         {
-            state2 +=1;
+            state1 +=1;
         }
         if (detection.intArray[5] == 2)
         {
-            state1 +=1;
-        }
-
-
-        if (detection.intArray[6] == 1)
-        {
             state2 +=1;
         }
-        if (detection.intArray[6] == 2)
-        {
-            state1 +=1;
-        }
 
 
-        if (detection.intArray[7] == 1)
-        {
-            state1 +=1;
-        }
-        if (detection.intArray[7] == 2)
-        {
-            state3 +=1;
-        }
+
 
 
 
@@ -119,22 +102,35 @@ public class detectionResult extends AppCompatActivity {
         Log.i("blue",String.valueOf(state3));
 
 
-        if (state1 >=5)
+
+        if (state2 ==0)
         {
-            comment1Text.setText("تشير إجاباتك إلى احتمالية إصابتك بآلام الظهر الحركية.");
-            comment2Text.setText("هذا التشخيص الأولي يساعدك على التعرف على حالتك من بين التشخيصات الأكثر شيوعا لآلام الظهر، وربما تكون هناك احتمالات أخرى، وهي لا تغني استشارة طبيبك، زيارة الطبيب المختص هو الطريق لتشخيص دقيق لحالتك.");
+            comment1Text.setText("تشير اجابتك إلى احتمالية اصابتك بالتهاب المفاصل الروماتزمي");
+            comment2Text.setText("هذا التشخيص الاولي، وربما تكون هناك احتمالات أخرى، وهي لا تغني عن استشارة طبيبك، زيارة الطبيب المختص هو الطريق لتشخيص حالتك بدقة");
 
         }
 
-        else if (state2 >=5)
+
+        else if (state2 >=6)
         {
-            comment1Text.setText("تشير إجاباتك إلى احتمالية إصابتك بآلام الظهر الالتهابية، قم بزيارة الطبيب المختص للكشف عن حالتك");
-            comment2Text.setText("هذا التشخيص الأولي يساعدك على التعرف على حالتك من بين التشخيصات الأكثر شيوعا لآلام الظهر، وربما تكون هناك احتمالات أخرى، وهي لا تغني استشارة طبيبك، زيارة الطبيب المختص هو الطريق لتشخيص دقيق لحالتك.");
+            comment1Text.setText("لا تشير اجابتك إلى احتمال إصابتك بالتهاب المفاصل الروماتزمي");
+            comment2Text.setText("هذا تشخيص اولي وهو لايغني استشارة طبيبك في حالة وجود أي اعراض، زيارة الطبيب المختص هو الطريق لتشخيص حالتك بدقة");
+
+        }
+
+        else if (state2 >=4)
+        {
+            comment1Text.setText("تشير اجابتك إلى احتمالية اصابتك بالتهاب المفاصل الروماتزمي");
+            comment2Text.setText("هذا التشخيص الاولي، وربما تكون هناك احتمالات أخرى، وهي لا تغني عن استشارة طبيبك، زيارة الطبيب المختص هو الطريق لتشخيص حالتك بدقة");
         }
         else
         {
-            comment1Text.setText("إجاباتك لا تشير بوضوح إلى نوع آلام ظهرك، احرص على زيارة الطبيب المختص للكشف عن حالتك");
-            comment2Text.setText("");
+
+            comment1Text.setText("لا تشير اجابتك إلى احتمال إصابتك بالتهاب المفاصل الروماتزمي");
+            comment2Text.setText("هذا تشخيص اولي وهو لايغني استشارة طبيبك في حالة وجود أي اعراض، زيارة الطبيب المختص هو الطريق لتشخيص حالتك بدقة");
+
+            //comment1Text.setText("إجاباتك لا تشير بوضوح إلى نوع آلام ظهرك، احرص على زيارة الطبيب المختص للكشف عن حالتك");
+            //comment2Text.setText("");
         }
 
     }

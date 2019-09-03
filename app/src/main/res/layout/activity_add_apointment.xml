@@ -50,6 +50,8 @@
         android:text="حفظ"
         android:textSize="18sp"
 
+        android:onClick="saved"
+
         android:textColor="@color/white"
         android:background="@drawable/webutton"
         />
@@ -59,6 +61,10 @@
         android:layout_height="match_parent"
         android:layout_below="@+id/imageView21"
         android:layout_above="@+id/button4"
+android:background= "#90FFFFFF"
+
+        android:layout_marginBottom="90dp"
+        android:padding="20dp"
         android:orientation="vertical">
 
         <EditText
@@ -66,13 +72,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:textColor="@color/white"
             android:textSize="17sp"
             android:gravity="right"
             android:textStyle="bold"
 
+            android:hint="اسم العيادة"
             android:inputType="textPersonName"
-            android:text="Name" />
+           />
 
         <EditText
             android:id="@+id/editText2"
@@ -83,47 +89,75 @@
             android:gravity="right"
             android:textStyle="bold"
             android:inputType="textPersonName"
-            android:text="Name" />
+            android:hint="اسم الطبيب"
+             />
 
         <EditText
             android:id="@+id/editText3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:textSize="17sp"
+            android:gravity="right"
+            android:textStyle="bold"
             android:inputType="textPersonName"
-            android:text="Name" />
+            android:hint="هاتف"
+            />
 
         <EditText
             android:id="@+id/editText4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:textSize="17sp"
+            android:gravity="right"
+            android:textStyle="bold"
             android:inputType="textPersonName"
-            android:text="Name" />
+            android:hint="داخلي"
+            />
 
         <EditText
             android:id="@+id/editText5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:textSize="17sp"
+            android:gravity="right"
+            android:textStyle="bold"
             android:inputType="textPersonName"
-            android:text="Name" />
+            android:hint="نقال"
+
+           />
 
         <EditText
             android:id="@+id/editText6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:textSize="17sp"
+            android:gravity="right"
+            android:textStyle="bold"
             android:inputType="textPersonName"
-            android:text="Name" />
+            android:hint="بريد إلكتروني"
+             />
 
-        <Spinner
-            android:id="@+id/spinner5"
+        <Button
+            android:id="@+id/button10"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:onClick="settime"
+            android:textStyle="bold"
+
+
+            android:text="الموعد" />
 
         <Spinner
             android:id="@+id/spinner6"
+
+            android:layout_marginTop="20dp"
+            android:background="@color/white"
+            android:gravity="center"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
     </LinearLayout>

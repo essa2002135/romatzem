@@ -5,26 +5,42 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".detectionResult">
+
     <ImageView
-        android:id="@+id/newbar"
+        android:id="@+id/imageView20"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/bg1" />
+
+    <TextView
+        android:id="@+id/textView16"
         android:layout_width="wrap_content"
-        android:layout_height="100dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:scaleType="fitXY"
-        android:src="@drawable/bar" />
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:shadowColor="#00FFF9F9"
+        android:textStyle="bold"
+        android:text="هل أنا مصاب؟"
 
+        android:textColor="@color/colorAccent"
+        android:textSize="25dp"
+        android:layout_centerHorizontal="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/title"
-        android:layout_width="170dp"
-        android:layout_height="40dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginEnd="14dp"
-        android:layout_marginTop="67dp"
-        android:scaleType="fitXY"
-        android:src="@drawable/detectionimage" />
+        android:id="@+id/imageView21"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView16"
+        android:layout_centerHorizontal="true"
+
+        app:srcCompat="@drawable/ifiline" />
 
     <ImageView
         android:id="@+id/imageView17"
@@ -56,7 +72,7 @@
         android:layout_marginTop="129dp"
         android:textStyle="bold"
         android:textSize="17sp"
-        android:text="TextView" />
+        android:text="" />
 
     <TextView
         android:id="@+id/comment2"
@@ -68,7 +84,7 @@
         android:layout_marginTop="20dp"
         android:layout_centerHorizontal="true"
         android:gravity="right"
-        android:text="TextView" />
+        android:text="" />
 
 
 </RelativeLayout>

@@ -54,8 +54,12 @@ public class theActivitySlider extends AppCompatActivity {
         viewDialog = new ViewDialog(this);
 
         req = Volley.newRequestQueue(this);
-            ImageView titleacA = (ImageView) findViewById(R.id.titleac);
-        titleacA.setImageResource(R.drawable.acttivtyand);
+           // ImageView titleacA = (ImageView) findViewById(R.id.titleac);
+       // titleacA.setImageResource(R.drawable.acttivtyand);
+
+
+                TextView myText = (TextView) findViewById(R.id.textView16);
+
         String TheTypee = getIntent().getStringExtra("TheType");
 
 

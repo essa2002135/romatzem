@@ -16,6 +16,8 @@ public class detectionstart extends AppCompatActivity {
 
     public void gotoQustion(View v)
     {
+
+        finish();
         Intent gotNext;
         String theId;
 
