@@ -138,22 +138,69 @@ String theId;
                 }
                 else if (position == 4)
                 {
-                    gotNext = new Intent(getBaseContext(),medicalsimportant.class);
-                    theId = "3";
-                    gotNext.putExtra("TheType", theId);
-                    startActivity(gotNext);
+
+                    // Moviee
+                  //  gotNext = new Intent(getBaseContext(),medicalsimportant.class);
+                  //  theId = "3";
+                 //   gotNext.putExtra("TheType", theId);
+                   // startActivity(gotNext);
 
 
 
                 }
                 else if (position == 5)
                 {
-                    gotNext = new Intent(getBaseContext(),detection.class);
-                    theId = "5";
+                   // gotNext = new Intent(getBaseContext(),detection.class);
+                  //  theId = "5";
+                   // gotNext.putExtra("TheType", theId);
+                   // startActivity(gotNext);
+
+                    gotNext = new Intent(getBaseContext(),medicalsimportant.class);
+                    theId = "3";
                     gotNext.putExtra("TheType", theId);
                     startActivity(gotNext);
 
+                }
 
+                else if (position == 6)
+                {
+                    // gotNext = new Intent(getBaseContext(),detection.class);
+                    //  theId = "5";
+                    // gotNext.putExtra("TheType", theId);
+                    // startActivity(gotNext);
+
+                      gotNext = new Intent(getBaseContext(),theActivitySlider.class);
+                    theId = "2";
+                      gotNext.putExtra("TheType", theId);
+                   startActivity(gotNext);
+
+                }
+
+
+                else if (position == 7)
+                {
+                    // gotNext = new Intent(getBaseContext(),detection.class);
+                    //  theId = "5";
+                    // gotNext.putExtra("TheType", theId);
+                    // startActivity(gotNext);
+
+                    gotNext = new Intent(getBaseContext(),theHospital.class);
+                    //theId = "2";
+                    //gotNext.putExtra("TheType", theId);
+                    startActivity(gotNext);
+
+                }
+                else if (position == 8)
+                {
+                    // gotNext = new Intent(getBaseContext(),detection.class);
+                    //  theId = "5";
+                    // gotNext.putExtra("TheType", theId);
+                    // startActivity(gotNext);
+
+                    gotNext = new Intent(getBaseContext(),rm_social.class);
+                    //theId = "2";
+                    //gotNext.putExtra("TheType", theId);
+                    startActivity(gotNext);
 
                 }
 

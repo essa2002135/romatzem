@@ -18,7 +18,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".medicalsimportant"></activity>
+        <activity android:name=".rm_social"></activity>
+        <activity android:name=".theHospital" />
+        <activity android:name=".medicalsimportant" />
         <activity android:name=".addApointment" />
         <activity android:name=".listdoctorAppointment" />
         <activity android:name=".result_esbyan" />

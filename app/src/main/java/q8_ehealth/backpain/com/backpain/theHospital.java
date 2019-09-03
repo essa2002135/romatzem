@@ -10,42 +10,29 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-public class medicalsimportant extends AppCompatActivity {
+public class theHospital extends AppCompatActivity {
 
 
     ArrayList<String> doctorName = new ArrayList<String>();
     ArrayList<String> place = new ArrayList<String>();
     ArrayList<String> time = new ArrayList<String>();
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_medicalsimportant);
+        setContentView(R.layout.activity_the_hospital);
 
         doctorName.add("Mahmoud");
         doctorName.add("ahmed");
         doctorName.add("omar");
         doctorName.add("yehia");
 
-
-        doctorName.add("Mahmoud");
-        doctorName.add("ahmed");
-        doctorName.add("omar");
-        doctorName.add("yehia");
-
-        ListView myListView = (ListView) findViewById(R.id.midacl) ;
-        medicalsimportant.customAdabterPaper theCustomAdabter = new medicalsimportant.customAdabterPaper();
+        ListView myListView = (ListView) findViewById(R.id.hospitalList) ;
+        theHospital.customAdabterPaper theCustomAdabter = new theHospital.customAdabterPaper();
         myListView.setAdapter(theCustomAdabter);
-
-
-
-
-
-
     }
 
-    class customAdabterPaper extends BaseAdapter
-    {
+
+    class customAdabterPaper extends BaseAdapter {
 
         @Override
         public int getCount() {
@@ -67,12 +54,11 @@ public class medicalsimportant extends AppCompatActivity {
 
         @Override
         public View getView(int position, View convertView, ViewGroup parent) {
-            View view = getLayoutInflater().inflate(R.layout.custom_medical,null);
+            View view = getLayoutInflater().inflate(R.layout.custom_hospital, null);
             TextView myText = (TextView) view.findViewById(R.id.textView22);
             myText.setText("محمود يحيى عيسى");
 
             // theDes.setMovementMethod(new ScrollingMovementMethod());
-
 
 
             //    String fileUrlImge = "http://rheumatism.q8-ehealth.com/uploads/files/"+theImage.get(position);

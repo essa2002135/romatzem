@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".rm_social">
+
+
+
+
+
+    <ImageView
+        android:id="@+id/imageView20"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bg1" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:shadowColor="#00FFF9F9"
+        android:textStyle="bold"
+        android:text="التواصل الاجتماعي"
+        android:textColor="@color/colorAccent"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView21"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView16"
+        android:layout_centerHorizontal="true"
+
+        app:srcCompat="@drawable/ifiline" />
+
+
+    <TextView
+        android:id="@+id/textViewrabta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:shadowColor="#00FFF9F9"
+        android:textStyle="bold"
+
+        android:text="الرابطة الكويتية لأمراض الروماتيزم"
+        android:textColor="@color/colorAccent"
+        android:textSize="17dp"
+        android:gravity="center"
+        android:layout_below="@+id/imageView21"
+        android:layout_centerHorizontal="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/socloalcontaineer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+       android:layout_below="@+id/textViewrabta"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:layout_marginRight="40dp"
+
+            android:background="@drawable/socailincon01"
+
+            android:text="" />
+
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/socailincon02"
+
+            android:text="" />
+
+        <Button
+            android:id="@+id/button9"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+
+            android:background="@drawable/socailincon04"
+
+            android:text="" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/textViewgehat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:shadowColor="#00FFF9F9"
+        android:textStyle="bold"
+        android:text="جهات أخرى تهمك"
+        android:textColor="@color/colorAccent"
+        android:textSize="17dp"
+        android:gravity="center"
+        android:layout_below="@+id/socloalcontaineer"
+        android:layout_centerHorizontal="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/gehat"
+        android:layout_below="@+id/textViewgehat"
+        android:layout_centerHorizontal="true"
+
+         />
+
+
+</RelativeLayout>

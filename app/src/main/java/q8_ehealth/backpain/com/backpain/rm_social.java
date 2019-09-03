@@ -10,36 +10,32 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-public class medicalsimportant extends AppCompatActivity {
+public class rm_social extends AppCompatActivity {
 
-
-    ArrayList<String> doctorName = new ArrayList<String>();
-    ArrayList<String> place = new ArrayList<String>();
-    ArrayList<String> time = new ArrayList<String>();
+    ArrayList<String> thetitle = new ArrayList<String>();
+    ArrayList<String> image = new ArrayList<String>();
+    ArrayList<String> thelink = new ArrayList<String>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_medicalsimportant);
-
-        doctorName.add("Mahmoud");
-        doctorName.add("ahmed");
-        doctorName.add("omar");
-        doctorName.add("yehia");
+        setContentView(R.layout.activity_rm_social);
+        thetitle.add("Mahmoud");
+        thetitle.add("ahmed");
+        thetitle.add("yehia");
 
 
-        doctorName.add("Mahmoud");
-        doctorName.add("ahmed");
-        doctorName.add("omar");
-        doctorName.add("yehia");
+        thetitle.add("Mahmoud");
+        thetitle.add("ahmed");
+        thetitle.add("omar");
+        thetitle.add("yehia");
 
-        ListView myListView = (ListView) findViewById(R.id.midacl) ;
-        medicalsimportant.customAdabterPaper theCustomAdabter = new medicalsimportant.customAdabterPaper();
+
+
+
+        ListView myListView = (ListView) findViewById(R.id.gehat) ;
+        rm_social.customAdabterPaper theCustomAdabter = new rm_social.customAdabterPaper();
         myListView.setAdapter(theCustomAdabter);
-
-
-
-
 
 
     }
@@ -49,7 +45,7 @@ public class medicalsimportant extends AppCompatActivity {
 
         @Override
         public int getCount() {
-            return doctorName.size();
+            return thetitle.size();
         }
 
         @Override
@@ -67,8 +63,8 @@ public class medicalsimportant extends AppCompatActivity {
 
         @Override
         public View getView(int position, View convertView, ViewGroup parent) {
-            View view = getLayoutInflater().inflate(R.layout.custom_medical,null);
-            TextView myText = (TextView) view.findViewById(R.id.textView22);
+            View view = getLayoutInflater().inflate(R.layout.custom_gehat,null);
+            TextView myText = (TextView) view.findViewById(R.id.textView19);
             myText.setText("محمود يحيى عيسى");
 
             // theDes.setMovementMethod(new ScrollingMovementMethod());
